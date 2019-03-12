@@ -7,7 +7,7 @@
     "bluebird": "^3.5.2",
     "classnames": "^2.2.6",
     "express": "^4.16.3",
-    "gh-pages": "^2.0.0",
+    "gh-pages": "^2.0.1",
     "lodash": "^4.17.11",
     "moment": "^2.22.2",
     "query-string": "^6.1.0",
@@ -20,7 +20,7 @@
     "react-lazy-load-image-component": "^1.1.4",
     "react-lazyload": "^2.3.0",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4",
+    "react-scripts": "^2.1.8",
     "react-transition-group": "^1.2.1",
     "react-virtualized": "^9.20.1",
     "socket.io-client": "^2.1.1",
@@ -29,12 +29,18 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -b master -d build",
     "start": "npm run build && node express.js",
     "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://vgodogg.com"
+  "homepage": "https://andrewstraks.github.io/vgo",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
